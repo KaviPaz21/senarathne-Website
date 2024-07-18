@@ -1,0 +1,19 @@
+.slideone{
+    background-image: url("../images/banner-01.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+.slidetwo{
+    background-image: url("../images/banner2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.slidethree{
+    background-image: url("../images/banner3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

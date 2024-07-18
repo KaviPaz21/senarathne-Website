@@ -1,0 +1,10 @@
+.paths{grid-area: path;}
+.logo{grid-area: logo;}
+
+.navbar{
+    display: grid;
+    place-content: center;
+    width: 100%;
+    grid-template-areas: 'logo path';
+    grid-gap: 15em;
+}
