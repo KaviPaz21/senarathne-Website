@@ -5,8 +5,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        "ps": '320px', // Custom breakpoint for extra small screens
       
+      },
       height:{
+         '2x':"2px",
         '97':'96vh',
         'ch800':'800px'
       },
@@ -25,6 +29,13 @@ module.exports = {
         "cw80":"80%",
         "cw500":"500px"
       
+      },
+      animation: {
+        'ease-in': 'easeIn 1s ease-in forwards',
+      },
+      fontFamily:{
+        "sinhala-1":"Noto Serif Sinhala",
+        "name":"Ga Maamli"
       }
     },
   },

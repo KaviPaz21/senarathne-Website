@@ -1,0 +1,10 @@
+.logo{grid-area: logo;}
+.text{grid-area: text;}
+.aboutme_header{grid-area: topic;}
+
+.Academy{
+    display: grid;
+    grid-template-areas:'topic topic topic' 'logo text text';
+    place-content: center;
+    grid-gap: 10px;
+}

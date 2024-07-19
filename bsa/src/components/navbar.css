@@ -1,10 +1,50 @@
 .paths{grid-area: path;}
 .logo{grid-area: logo;}
+.menu{grid-area: menu;}
 
+@media(min-width:1025px){
 .navbar{
     display: grid;
     place-content: center;
     width: 100%;
-    grid-template-areas: 'logo path';
+    grid-template-areas: 'logo path menu';
     grid-gap: 15em;
+}
+}
+@media(max-width:1024px){
+    .navbar{
+        display: grid;
+        place-content: center;
+        width: 100%;
+        grid-template-areas: 'logo path menu';
+        grid-gap: 5em;
+    }
+}
+
+@media(max-width:768px){
+    .navbar{
+        display: grid;
+        place-content: center;
+        width: 100%;
+        grid-template-areas: 'logo path menu';
+        grid-gap: 15em;
+    }
+}
+@media(max-width:425px){
+    .navbar{
+        display: grid;
+        place-content: center;
+        width: 100%;
+        grid-template-areas: 'logo menu';
+        grid-gap: 15em;
+    }
+}
+@media(max-width:320px){
+    .navbar{
+        display: grid;
+        place-content: center;
+        width: 100%;
+        grid-template-areas: 'logo menu';
+        grid-gap: 10em;
+    }
 }
