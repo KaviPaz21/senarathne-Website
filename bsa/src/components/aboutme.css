@@ -4,7 +4,7 @@
 
 .Academy{
     display: grid;
-    grid-template-areas:'topic topic topic' 'logo text text';
+    grid-template-areas:'topic topic topic' 'text text text' 'logo logo logo';
     place-content: center;
     grid-gap: 10px;
 }
