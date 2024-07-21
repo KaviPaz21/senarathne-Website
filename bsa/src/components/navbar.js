@@ -9,13 +9,13 @@ export default function Navbar({bck , textcol}) {
             <div className={`${bck ? "":" bg-black" } navbar text-sm py-8`}>
                 <div className='logo text-white font-serif text-3xl font-bold  hover:scale-105 duration-300 cursor-pointer'>BSA</div>
                 <div className={`paths ${!textcol ? "text-white" : "text-black"} ps:hidden sm:hidden lg:block xl:block font-semibold ml-5 top-1/2 translate-y-2`}>
-                    <span className='px-4 hover:text-blue-600 duration-300 cursor-pointer hove'>Home</span>
-                    <span className='px-4 hover:text-blue-600 duration-300 cursor-pointer'>About Us</span>
-                    <span className='px-4 hover:text-blue-600 duration-300 cursor-pointer'>Process</span>
-                    <span className='px-4 hover:text-blue-600 duration-300 cursor-pointer'>Thoughts</span>
-                    <span className='px-4 hover:text-blue-600 duration-300 cursor-pointer'>Gallary</span>
-                    <span className='px-4 hover:text-blue-600 duration-300 cursor-pointer'>LMS</span>
-                    <span className='px-4 hover:text-blue-600 duration-300 cursor-pointer'>Contacts</span>
+                    <div className='px-2 hover:text-blue-600 duration-300 cursor-pointer inline'>Home</div>
+                    <div className='px-2 hover:text-blue-600 duration-300 cursor-pointer inline'>About Us</div>
+                    <div className='px-2 hover:text-blue-600 duration-300 cursor-pointer inline'>Process</div>
+                    <div className='px-2 hover:text-blue-600 duration-300 cursor-pointer inline'>Thoughts</div>
+                    <div className='px-2 hover:text-blue-600 duration-300 cursor-pointer inline'>Gallary</div>
+                    <div className='px-2 hover:text-blue-600 duration-300 cursor-pointer inline'>LMS</div>
+                    <div className='px-2 hover:text-blue-600 duration-300 cursor-pointer inline'>Contacts</div>
                     
 
                 </div>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './home.css'
 import Navbar from './navbar'
+import { Link } from 'react-router-dom'
 
 export default function Home() {
     const [firsts, setfirst] = useState(true)
@@ -80,9 +81,9 @@ export default function Home() {
                 <span onClick={() => mover(-1)} className='absolute ml-4 top-1/2 -translate-y-1/2 text-3xl bg-black text-white px-4 py-2 rounded-lg opacity-40 hover:opacity-100 duration-300'>&lt;</span>
                 <span onClick={() => mover(1)} className='absolute mr-4 top-1/2 right-0 -translate-y-1/2 text-3xl bg-black text-white px-4 py-2 rounded-lg opacity-40 hover:opacity-100 duration-300' >&gt;</span>
                 
-                <button className={`${!firsts && "opacity-0"} font-sans text-white py-2 px-4 bg-orange-600 mt-4 rounded-full hover:scale-105 hover:bg-orange-500 duration-300 absolute left-1/2 bottom-20 -translate-x-1/2`} onClick={check}>Contact Us</button>
-                <button className={`${!second && "opacity-0"} font-sans text-white py-2 px-4 bg-orange-600 mt-4 rounded-full hover:scale-105 hover:bg-orange-500 duration-300 absolute left-1/2 bottom-20 -translate-x-1/2`} onClick={check}>Register Now</button>
-                <button className={`${!third && "opacity-0"} font-sans text-white py-2 px-4 bg-orange-600 mt-4 rounded-full hover:scale-105 hover:bg-orange-500 duration-300 absolute left-1/2 bottom-20 -translate-x-1/2`} onClick={check}>Join with LMS</button>
+                <button className={`${!firsts && "scale-0"} font-sans text-white py-2 px-4 bg-orange-600 mt-4 rounded-full hover:scale-105 hover:bg-orange-500 duration-300 absolute left-1/2 bottom-20 -translate-x-1/2`}>Contact Us</button>
+                <Link to="/Register"> <button className={`${!second && "scale-0"} font-sans text-white py-2 px-4 bg-orange-600 mt-4 rounded-full hover:scale-105 hover:bg-orange-500 duration-300 absolute left-1/2 bottom-20 -translate-x-1/2`}>Registe Now</button></Link>
+                <button className={`${!third && "scale-0"} font-sans text-white py-2 px-4 bg-orange-600 mt-4 rounded-full hover:scale-105 hover:bg-orange-500 duration-300 absolute left-1/2 bottom-20 -translate-x-1/2`}>Join with LMS</button>
                 
                 <div className=' absolute bottom-3 left-1/2 -traslate-x-1/2'>
                     <div className={`${firsts ? "bg-gray-400 w-4 h-4" : "bg-gray-700"} w-3 h-3  rounded-full inline-block mr-1 duration-300`} onClick={() => mover("one")}></div>

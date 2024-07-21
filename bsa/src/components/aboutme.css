@@ -1,10 +1,14 @@
 .logo{grid-area: logo;}
 .text{grid-area: text;}
 .aboutme_header{grid-area: topic;}
+.t-topic {grid-area: ttp;}
+.about-s{grid-area: abs;}
+.t-image{grid-area: imgs;}
 
 .Academy{
     display: grid;
-    grid-template-areas:'topic topic topic' 'text text text' 'logo logo logo';
     place-content: center;
+    width: 100%;
+    grid-template-areas:'topic topic topic' 'text text text' 'logo logo logo' 'ttp ttp ttp' 'imgs abs abs';
     grid-gap: 10px;
 }

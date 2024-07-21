@@ -36,7 +36,8 @@ module.exports = {
       },
       fontFamily:{
         "sinhala-1":"Noto Serif Sinhala",
-        "name":"Ga Maamli"
+        "name":"Ga Maamli",
+        'zain':"Zain"
       }
     },
   },

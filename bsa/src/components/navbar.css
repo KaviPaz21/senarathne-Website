@@ -7,8 +7,8 @@
     display: grid;
     place-content: center;
     width: 100%;
-    grid-template-areas: 'logo path menu';
-    grid-gap: 15em;
+    grid-template-areas: 'logo path path path path path menu';
+    grid-gap: 10em;
 }
 }
 @media(max-width:1024px){
@@ -16,8 +16,8 @@
         display: grid;
         place-content: center;
         width: 100%;
-        grid-template-areas: 'logo path menu';
-        grid-gap: 5em;
+        grid-template-areas: 'logo path path path path path menu';
+        grid-gap: 10em;
     }
 }
 

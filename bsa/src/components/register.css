@@ -1,0 +1,9 @@
+.left{grid-area: left;}
+.right{grid-area: right;}
+
+.Register-box{
+    display: grid;
+    place-content: center;
+    grid-template-areas: 'right';
+   
+}
