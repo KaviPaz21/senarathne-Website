@@ -1,4 +1,4 @@
-.slideone{
+/*.slideone{
     background-image: url("../images/banner-01.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -16,4 +16,42 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}*/
+
+
+
+.home-Details{grid-area: hd;}
+.Logo{grid-area: log;}
+
+
+.homepage{
+    background: 
+    radial-gradient(circle at 80% 30%, rgba(161, 155, 248, 0.4) 5%, rgba(255, 255, 255, 0.01) 20%),
+    radial-gradient(circle at 65% 60%, rgba(201, 119, 226, 0.2) 10%, rgba(255, 255, 255, 0.1) 30%),
+    #ffffff;
+ 
+    display: grid;
+    grid-template-areas: 'hd log';
+    width: 100%;
+    place-content: center;
+    grid-gap: 5em;
+
+}
+
+
+.subject{
+    text-shadow: 1px 2px 7px gray;
+}
+
+.image{
+    width: 500px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.line{
+    box-shadow: 10px 5px 15px rgb(0, 0, 0);
+}
+.cont{
+    box-shadow: 2px 3px 10px rgb(141, 141, 233);
 }

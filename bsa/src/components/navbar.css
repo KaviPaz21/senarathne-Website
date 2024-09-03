@@ -1,50 +1,23 @@
-.paths{grid-area: path;}
-.logo{grid-area: logo;}
-.menu{grid-area: menu;}
-
-@media(min-width:1025px){
-.navbar{
-    display: grid;
-    place-content: center;
-    width: 100%;
-    grid-template-areas: 'logo path path path path path menu';
-    grid-gap: 10em;
+.paths {
+  grid-area: path;
 }
+.logo {
+  grid-area: logo;
 }
-@media(max-width:1024px){
-    .navbar{
-        display: grid;
-        place-content: center;
-        width: 100%;
-        grid-template-areas: 'logo path path path path path menu';
-        grid-gap: 10em;
-    }
+.menu {
+  grid-area: menu;
 }
 
-@media(max-width:768px){
-    .navbar{
-        display: grid;
-        place-content: center;
-        width: 100%;
-        grid-template-areas: 'logo path menu';
-        grid-gap: 15em;
-    }
+.navbar {
+  display: grid;
+  place-content: center;
+  width: 100%;
+  grid-template-areas: "logo path menu";
+  grid-gap: 15em;
+  box-shadow: 0px 0px 7px rgb(223, 223, 223);
 }
-@media(max-width:425px){
-    .navbar{
-        display: grid;
-        place-content: center;
-        width: 100%;
-        grid-template-areas: 'logo menu';
-        grid-gap: 15em;
-    }
+
+.logo {
+  text-shadow: 1px 2px 3px gray;
 }
-@media(max-width:320px){
-    .navbar{
-        display: grid;
-        place-content: center;
-        width: 100%;
-        grid-template-areas: 'logo menu';
-        grid-gap: 10em;
-    }
-}
+

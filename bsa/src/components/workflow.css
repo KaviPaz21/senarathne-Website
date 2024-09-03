@@ -1,0 +1,48 @@
+.protopic{grid-area: ptp;}
+.col1{grid-area: c1;}
+.col2{grid-area: c2;}
+.col3{grid-area: c3;}
+
+.workflow{
+    display: grid;
+    width: 100%;
+    place-content: center;
+    grid-template-areas: 
+        'ptp ptp ptp'
+        'c1 c2 c3';
+    grid-gap: 3em;
+
+    background: 
+    radial-gradient(circle at 80% 50%, rgba(167, 184, 233, 0.5) 5%, rgba(255, 255, 255, 0.01) 20%),
+    radial-gradient(circle at 15% 40%, rgba(222, 199, 230, 0.5) 10%, rgba(255, 255, 255, 0.1) 20%),
+    #ffffff;
+}
+
+.process-head{
+    text-shadow: 1px 2px 3px gray;
+}
+.box{
+    box-shadow: 1px 0px 10px rgb(231, 231, 231);
+    width: 400px;
+    background-color: white;
+}
+.vecimg{
+    width: 96px;
+    height: 96px;
+    transition: .3s;
+    box-shadow: 1px 1px 15px rgb(197, 197, 197);
+    border-radius: 50%;
+
+    
+}
+.box:hover .vecimg{
+    width: 120px;
+    height: 120px;
+    margin-top: -30px;
+}
+.process-head{
+    transition: .3s;
+}
+.box:hover .process-head{
+    margin-top: 80px;
+}

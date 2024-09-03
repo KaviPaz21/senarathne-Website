@@ -4,25 +4,25 @@ import logo from "../images/logo.png"
 
 export default function Aboutme() {
   return (
-    <div className='aboutme py-40 h-auto bg-black' >
+    <div className='aboutme py-40 h-auto' >
 
       <div className='Academy mb-7'>
-        <h1 className='aboutme_header text-5xl font-bold font-serif py-4 text-center text-white'>The Greatful Effort...</h1>
+        <h1 className='aboutme_header text-5xl font-bold font-serif py-4 text-center text-gray-600'>💪The Greatful Effort...</h1>
         
-        <div className='text w-cw900 leading-9 text-center text-gray-400'>
+        <div className='text w-cw900 leading-9 text-center text-gray-600'>
           BS Physics Academy which is introduced by Mr. Bandara Senarathna, a Leading 
-          tution master in Sri Lanka to produce crystel clear plysics knowledge targeting the students who are facing G.C.E Advanced Level Examination in Sri lanka. <br />
+          tution master in Sri Lanka for teaching plysics by targetting targeting the students who are facing G.C.E Advanced Level Examination in Sri lanka. <br />
           The Vision of this organization is to teach, explain and practice the advaced concepts, explain the practicals, give proper practice for the examination and eleminate the examination fear 
           of the students by targetting the A/L s.
           To ful-fill that vision, we take several options such as produce quality and compleate materials through a powerful Learning Management System (LMS) called BSP LMS, Practical Video Sessions, 
           Explanations through simulations ect
 
           <p className='text-c20 font-semibold mt-4 relative'>So Let's begin your Journey with ,
-          <img src={logo} alt="logo" className='logo w-60 relative rounded-xl left-1/2 -translate-x-1/2 top-8 cursor-pointer hover:scale-105 duration-300' /></p>
+          <img src={logo} alt="logo" className='logo w-48 relative rounded-xl left-1/2 -translate-x-1/2 top-8 cursor-pointer hover:scale-105 duration-300' /></p>
         </div>
 
 
-        <div className='t-topic text-5xl font-bold font-serif py-4 mt-40 text-white '>ගුරුවරයා පිලිබදව....</div>
+        <div className='t-topic text-5xl font-bold font-serif py-4 mt-40 text-gray-700  pb-40'>👨‍🎓 ගුරුවරයා පිලිබදව....</div>
         <div className='t-image w-40'>ya</div>
         <div className='about-s  text-center w-cw500 text-gray-400'>2017 උසස් පෙළ ජීව විද්‍යා අංශයෙන් දිවයිනේ 4 වන ස්ථානයට
                                 (කොළඹ දිස්ත්‍රික් 2) සමත්ව මේ වන විට කොළඹ වෛද්‍ය පීඨයේ සිය උපාධිය අවසන් කරමින් සිටියි. 2019 දී උපකාරක 

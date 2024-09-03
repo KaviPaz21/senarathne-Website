@@ -1,0 +1,22 @@
+.thtopic{grid-area: thtp;}
+.thoughtimg{grid-area: thimg;}
+.stdthought{grid-area: tdth;}
+
+.thoughts{
+    display: grid;
+    place-content: center;
+    width: 100%;
+    grid-template-areas: 
+        'thtp thtp'
+        'thimg tdth';
+
+    column-gap: 12em;
+
+    background: 
+
+    radial-gradient(circle at 65% 60%, rgba(201, 119, 226, 0.5) 1%, rgba(255, 255, 255, 0.1) 20%),
+    #ffffff;
+}
+.ind{
+    box-shadow: 1px 2px 3px gray;
+}
