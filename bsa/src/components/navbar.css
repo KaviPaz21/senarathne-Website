@@ -8,16 +8,126 @@
   grid-area: menu;
 }
 
-.navbar {
-  display: grid;
-  place-content: center;
-  width: 100%;
-  grid-template-areas: "logo path menu";
-  grid-gap: 15em;
-  box-shadow: 0px 0px 7px rgb(223, 223, 223);
-}
 
 .logo {
   text-shadow: 1px 2px 3px gray;
 }
 
+@media (min-width:1440px){
+  .navbar {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    grid-template-areas: "logo path menu";
+    grid-gap: 15em;
+    box-shadow: 0px 0px 7px rgb(223, 223, 223);
+  }
+  
+  .paths{
+    display: block;
+  }
+}
+
+
+
+
+@media (max-width:1439px){
+  .navbar {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    grid-template-areas: "logo path menu";
+    grid-gap: 15em;
+    box-shadow: 0px 0px 7px rgb(223, 223, 223);
+  }
+  .paths{
+    display: block;
+  }
+}
+
+
+
+@media (max-width:1024px){
+  .navbar {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    grid-template-areas: "logo path menu";
+    grid-gap: 5em;
+    box-shadow: 0px 0px 7px rgb(223, 223, 223);
+  }
+  
+  .paths{
+    display: block;
+  }
+}
+
+
+@media (max-width:1024px){
+  .navbar {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    grid-template-areas: "logo path menu";
+    grid-gap: 5em;
+    box-shadow: 0px 0px 7px rgb(223, 223, 223);
+  }
+  
+  .paths{
+    display: block;
+  }
+}
+
+
+
+
+@media (max-width:768px){
+  .navbar {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    grid-template-areas: "logo  menu";
+    grid-gap: 25em;
+    box-shadow: 0px 0px 7px rgb(223, 223, 223);
+  }
+  
+  .paths{
+    display: none;
+  }
+}
+
+
+
+@media (max-width:425px){
+  .navbar {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    grid-template-areas: "logo  menu";
+    grid-gap: 13em;
+    box-shadow: 0px 0px 7px rgb(223, 223, 223);
+  }
+  
+  .paths{
+    display: none;
+  }
+}
+
+
+
+
+
+@media (max-width:320px){
+  .navbar {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    grid-template-areas: "logo  menu";
+    grid-gap: 10em;
+    box-shadow: 0px 0px 7px rgb(223, 223, 223);
+  }
+  
+  .paths{
+    display: none;
+  }
+}

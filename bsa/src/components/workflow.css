@@ -1,48 +1,263 @@
-.protopic{grid-area: ptp;}
-.col1{grid-area: c1;}
-.col2{grid-area: c2;}
-.col3{grid-area: c3;}
+.protopic {
+  grid-area: ptp;
+  text-shadow: 1px 2px 20px rgb(151, 151, 151);
+}
+.col1 {
+  grid-area: c1;
+}
+.col2 {
+  grid-area: c2;
+}
+.col3 {
+  grid-area: c3;
+}
 
-.workflow{
+.process-head {
+  text-shadow: 1px 2px 3px gray;
+}
+
+@media (min-width: 1440px) {
+  .workflow {
     display: grid;
     width: 100%;
     place-content: center;
-    grid-template-areas: 
-        'ptp ptp ptp'
-        'c1 c2 c3';
+    grid-template-areas:
+      "ptp ptp ptp"
+      "c1 c2 c3";
     grid-gap: 3em;
 
-    background: 
-    radial-gradient(circle at 80% 50%, rgba(167, 184, 233, 0.5) 5%, rgba(255, 255, 255, 0.01) 20%),
-    radial-gradient(circle at 15% 40%, rgba(222, 199, 230, 0.5) 10%, rgba(255, 255, 255, 0.1) 20%),
-    #ffffff;
-}
+    background-image: url("../images/poly.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 
-.process-head{
-    text-shadow: 1px 2px 3px gray;
-}
-.box{
-    box-shadow: 1px 0px 10px rgb(231, 231, 231);
+  .box {
+    box-shadow: 1px 0px 10px rgb(161, 161, 161, 0.9);
     width: 400px;
+    height: 380px;
     background-color: white;
-}
-.vecimg{
+  }
+  .vecimg {
     width: 96px;
     height: 96px;
-    transition: .3s;
+    transition: 0.3s;
     box-shadow: 1px 1px 15px rgb(197, 197, 197);
     border-radius: 50%;
-
-    
-}
-.box:hover .vecimg{
+  }
+  .box:hover .vecimg {
     width: 120px;
     height: 120px;
     margin-top: -30px;
-}
-.process-head{
-    transition: .3s;
-}
-.box:hover .process-head{
+  }
+  .process-head {
+    transition: 0.3s;
+  }
+  .box:hover .process-head {
     margin-top: 80px;
+  }
 }
+
+
+
+
+@media (max-width: 1439px) {
+    .workflow {
+      display: grid;
+      width: 100%;
+      place-content: center;
+      grid-template-areas:
+        "ptp ptp ptp"
+        "c1 c2 c3";
+      grid-gap: 1em;
+  
+      background-image: url("../images/poly.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  
+    .box {
+      box-shadow: 1px 0px 10px rgb(161, 161, 161, 0.9);
+      width: 380px;
+      height: 370px;
+      background-color: white;
+    }
+    .vecimg {
+      width: 96px;
+      height: 96px;
+      transition: 0.3s;
+      box-shadow: 1px 1px 15px rgb(197, 197, 197);
+      border-radius: 50%;
+    }
+    .box:hover .vecimg {
+      width: 120px;
+      height: 120px;
+      margin-top: -30px;
+    }
+    .process-head {
+      transition: 0.3s;
+    }
+    .box:hover .process-head {
+      margin-top: 80px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .workflow {
+      display: grid;
+      width: 100%;
+      place-content: center;
+      grid-template-areas:
+        "ptp ptp ptp"
+        "c1 c2 c3";
+      grid-gap: 1em;
+  
+      background-image: url("../images/poly.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  
+    .box {
+      box-shadow: 1px 0px 10px rgb(161, 161, 161, 0.9);
+      width: 300px;
+      height: 420px;
+      background-color: white;
+    }
+    .text{
+        width: fit-content;
+        text-align: justify;
+    }
+    .vecimg {
+      width: 96px;
+      height: 96px;
+      transition: 0.3s;
+      box-shadow: 1px 1px 15px rgb(197, 197, 197);
+      border-radius: 50%;
+    }
+    .box:hover .vecimg {
+      width: 120px;
+      height: 120px;
+      margin-top: -30px;
+    }
+    .process-head {
+      transition: 0.3s;
+    }
+    .box:hover .process-head {
+      margin-top: 80px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .workflow {
+      display: grid;
+      width: 100%;
+      place-content: center;
+      grid-template-areas:
+        "ptp"
+        "c1"
+        "c2" 
+        "c3";
+      grid-gap: 2em;
+  
+      background-image: url("../images/poly.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .protopic{
+        font-size: 40px;
+    }
+    .box {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+      box-shadow: 1px 0px 10px rgb(161, 161, 161, 0.9);
+      width: 90vw;
+      height: 320px;
+      background-color: white;
+      margin-top: 2em;
+    }
+    .text{
+        width: fit-content;
+        text-align: justify;
+    }
+    .vecimg {
+      width: 96px;
+      height: 96px;
+      transition: 0.3s;
+      box-shadow: 1px 1px 15px rgb(197, 197, 197);
+      border-radius: 50%;
+    }
+    .box:hover .vecimg {
+      
+      height: 120px;
+      margin-top: -30px;
+    }
+    .process-head {
+      transition: 0.3s;
+    }
+    .box:hover .process-head {
+      margin-top: 80px;
+    }
+  }
+
+
+
+
+  @media (max-width: 425px) {
+    .workflow {
+      display: grid;
+      width: 100%;
+      place-content: center;
+      grid-template-areas:
+        "ptp"
+        "c1"
+        "c2" 
+        "c3";
+      grid-gap: 2em;
+  
+      background-image: url("../images/poly.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .protopic{
+        font-size: 40px;
+    }
+    .box {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+      box-shadow: 1px 0px 10px rgb(161, 161, 161, 0.9);
+      width: 90vw;
+      height: 360px;
+      background-color: white;
+      margin-top: 2em;
+    }
+    .text{
+        width: fit-content;
+        text-align: justify;
+        padding: 0px;
+        font-size: 15px;
+    }
+    .vecimg {
+      width: 96px;
+      height: 96px;
+      transition: 0.3s;
+      box-shadow: 1px 1px 15px rgb(197, 197, 197);
+      border-radius: 50%;
+    }
+    .box:hover .vecimg {
+      
+      height: 120px;
+      margin-top: -30px;
+    }
+    .process-head {
+      transition: 0.3s;
+    }
+    .box:hover .process-head {
+      margin-top: 80px;
+    }
+  }

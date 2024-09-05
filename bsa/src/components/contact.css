@@ -1,0 +1,124 @@
+.contp{grid-area: tp;}
+.context{grid-area: txt;}
+.form{grid-area: frm;}
+
+
+.link{
+    transition: .3s;
+}
+.link:hover{
+    transform: scale(1.02);
+}
+
+
+@media(min-width:1440px){
+    .contactssec{
+        margin-top: 250px;
+        display: grid;
+        grid-template-areas: 
+            'tp frm'
+            'txt frm';
+        width: 100%;
+        column-gap: 5em;
+        row-gap: 3em;
+        place-content: center;
+    }
+}
+
+
+
+@media(max-width:1439px){
+    .contactssec{
+        margin-top: 250px;
+        display: grid;
+        grid-template-areas: 
+            'tp frm'
+            'txt frm';
+        width: 100%;
+        column-gap: 1em;
+        row-gap: 3em;
+        place-content: center;
+    }
+}
+
+
+
+@media(max-width:1024px){
+    .contactssec{
+        margin-top: 250px;
+        display: grid;
+        grid-template-areas: 
+            'tp frm'
+            'txt frm';
+        width: 100%;
+        column-gap: 2em;
+        row-gap: 3em;
+        place-content: center;
+    }
+    .conpara{
+        width: 40vw;
+    }
+    .inputtiing{
+        width: 45vw;
+    }
+}
+
+
+@media(max-width:768px){
+    .contactssec{
+        margin-top: 250px;
+        display: grid;
+        grid-template-areas: 
+            'tp' 
+            'frm'
+            'txt';
+        width: 100%;
+        column-gap: 2em;
+        row-gap: 3em;
+        place-content: center;
+    }
+    .conpara{
+        width: 80vw;
+    }
+    .inputtiing{
+        width: 80vw;
+    }
+    .socials{ 
+        width: fit-content;
+        margin: 50px 0px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+
+
+
+@media(max-width:425px){
+    .contactssec{
+        margin-top: 250px;
+        display: grid;
+        grid-template-areas: 
+            'tp' 
+            'frm'
+            'txt';
+        width: 100%;
+        column-gap: 2em;
+        row-gap: 3em;
+        place-content: center;
+    }
+    .conpara{
+        width: 90vw;
+    }
+    .inputtiing{
+        width: 90vw;
+    }
+    .socials{ 
+        width: fit-content;
+        margin: 50px 0px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

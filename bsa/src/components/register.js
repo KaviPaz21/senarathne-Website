@@ -64,6 +64,7 @@ export default function Register() {
           <img src={logo} alt="logo" className='w-60 rounded-3xl mb-4' />
           <div className='text-3xl font-bold font-zain'>Welcome to BS Physics Academy !</div>
           <div className='text-gray-500 text-c20'>Please fill all the fields given below for sucessfull Registration</div>
+          <div className='text-red-500 text-xl'>Site under construction...! Registrations cannot proceed at this moment <br/> Sorry for the inconvenience and we will be back soon....!.</div>
           <div className='forms relative'>
 
 

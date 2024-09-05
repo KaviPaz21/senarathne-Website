@@ -18,40 +18,277 @@
     background-size: cover;
 }*/
 
+.home-Details {
+  grid-area: hd;
+}
+.Logo {
+  grid-area: log;
+}
 
+.subject {
+  text-shadow: 1px 2px 7px gray;
+}
 
-.home-Details{grid-area: hd;}
-.Logo{grid-area: log;}
+.line {
+  box-shadow: 10px 5px 15px rgb(0, 0, 0);
+}
+.cont {
+  box-shadow: 2px 3px 10px rgb(141, 141, 233);
+}
 
+.bsa {
+  text-shadow: 1px 2px 15px black;
+}
+.seal {
+  display: block;
+  animation: sealrotate 15s linear infinite;
+}
+@keyframes sealrotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
 
-.homepage{
-    background: 
-    radial-gradient(circle at 80% 30%, rgba(161, 155, 248, 0.4) 5%, rgba(255, 255, 255, 0.01) 20%),
-    radial-gradient(circle at 65% 60%, rgba(201, 119, 226, 0.2) 10%, rgba(255, 255, 255, 0.1) 30%),
-    #ffffff;
- 
+@media (min-width: 1440px) {
+  .homepage {
+    background: radial-gradient(
+        circle at 80% 30%,
+        rgba(161, 155, 248, 0.4) 5%,
+        rgba(255, 255, 255, 0.01) 20%
+      ),
+      radial-gradient(
+        circle at 65% 60%,
+        rgba(201, 119, 226, 0.2) 10%,
+        rgba(255, 255, 255, 0.1) 30%
+      ),
+      #ffffff;
+
     display: grid;
-    grid-template-areas: 'hd log';
+    grid-template-areas: "hd log";
     width: 100%;
     place-content: center;
-    grid-gap: 5em;
-
-}
-
-
-.subject{
-    text-shadow: 1px 2px 7px gray;
-}
-
-.image{
+    column-gap: 10em;
+  }
+  .image {
     width: 500px;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+  }
+  .seal{
+    width: 150px;
+    top: 320px;
+  }
 }
-.line{
-    box-shadow: 10px 5px 15px rgb(0, 0, 0);
+
+@media (max-width: 1439px) {
+  .homepage {
+    background: radial-gradient(
+        circle at 80% 30%,
+        rgba(161, 155, 248, 0.4) 5%,
+        rgba(255, 255, 255, 0.01) 20%
+      ),
+      radial-gradient(
+        circle at 65% 60%,
+        rgba(201, 119, 226, 0.2) 10%,
+        rgba(255, 255, 255, 0.1) 30%
+      ),
+      #ffffff;
+
+    display: grid;
+    grid-template-areas: "hd log";
+    width: 100%;
+    place-content: center;
+    column-gap: 3em;
+  }
+  .image {
+    width: 500px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .seal{
+    width: 150px;
+    top:320px
+  }
+  .social-follow{
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
-.cont{
-    box-shadow: 2px 3px 10px rgb(141, 141, 233);
 }
+
+
+
+
+
+@media (max-width: 1024px) {
+  .homepage {
+    background: radial-gradient(
+        circle at 80% 30%,
+        rgba(161, 155, 248, 0.4) 5%,
+        rgba(255, 255, 255, 0.01) 20%
+      ),
+      radial-gradient(
+        circle at 65% 60%,
+        rgba(201, 119, 226, 0.2) 10%,
+        rgba(255, 255, 255, 0.1) 30%
+      ),
+      #ffffff;
+
+    display: grid;
+    grid-template-areas: "hd log";
+    width: 100%;
+    place-content: center;
+    column-gap: 1em;
+  }
+  .image {
+    width: 400px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .slogan{
+    font-size: 40px;
+    text-align: center;
+  }
+  .subject{
+    text-align: center;
+    font-size: 70px;
+  }
+  .name{
+    font-size: 50px;
+    text-align: center;
+  }
+  .seal{
+    width: 150px;
+    top:320px
+  }
+  .social-follow{
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .homepage {
+      background: radial-gradient(
+          circle at 80% 30%,
+          rgba(161, 155, 248, 0.4) 5%,
+          rgba(255, 255, 255, 0.01) 20%
+        ),
+        radial-gradient(
+          circle at 65% 60%,
+          rgba(201, 119, 226, 0.2) 10%,
+          rgba(255, 255, 255, 0.1) 30%
+        ),
+        #ffffff;
+  
+      display: grid;
+      grid-template-areas: "hd";
+      width: 100%;
+      place-content: center;
+      column-gap: 5em;
+    }
+    
+    .Logo{display: none;}
+    .slogan{
+      font-size: 40px;
+      text-align: center;
+    }
+    .subject{
+      text-align: center;
+      font-size: 70px;
+    }
+    .name{
+      font-size: 50px;
+      text-align: center;
+    }
+    .seal{
+      width: 150px;
+      top:320px
+    }
+    .adp{
+        text-align: center;
+    }
+    .btnset{
+        
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .social-follow{
+        text-align: center;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+  }
+
+
+
+  @media (max-width: 425px) {
+    .homepage {
+      background: radial-gradient(
+          circle at 80% 30%,
+          rgba(161, 155, 248, 0.4) 5%,
+          rgba(255, 255, 255, 0.01) 20%
+        ),
+        radial-gradient(
+          circle at 65% 60%,
+          rgba(201, 119, 226, 0.2) 10%,
+          rgba(255, 255, 255, 0.1) 30%
+        ),
+        #ffffff;
+  
+      display: grid;
+      grid-template-areas: "hd";
+      width: 100%;
+      place-content: center;
+      column-gap: 5em;
+    }
+    
+    .Logo{display: none;}
+    .slogan{
+      font-size: 35px;
+      text-align: center;
+    }
+    .subject{
+      text-align: center;
+      font-size: 70px;
+    }
+    .name{
+      font-size: 50px;
+      text-align: center;
+    }
+    .seal{
+      width: 150px;
+      top:320px
+    }
+    .adp{
+        text-align: center;
+    }
+    .btnset{
+        
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .social-follow{
+        text-align: center;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+  }

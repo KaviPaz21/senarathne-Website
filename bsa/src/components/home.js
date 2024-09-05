@@ -2,33 +2,42 @@ import React, { useState, useEffect } from 'react'
 import './home.css'
 import Social from './social'
 
-import home from '../images/home.svg'
+import home from '../images/senarathne1.png'
+import seal from '../images/seal.png'
+import { Link } from 'react-router-dom'
+
 
 
 export default function Home() {
-    
+
 
     return (
-        <div className='homepage hptwo h-screen'> 
+        <div className='homepage hptwo h-screen'>
             <div className='home-Details pt-16'>
                 <div className="slogan text-5xl text-gray-900 font-semibold text-left">ආසාවෙන් ඉගෙන ගන්න...</div>
                 <div className="subject pt-4 text-left font-bold text-8xl text-purple-900">PHYSICS</div>
                 <div className="name text-left pt-7 font-bold text-6xl text-gray-800">Bandara Senarathne</div>
 
                 <div className='pt-12'>
-                    <div className='text-gray-600 text-2xl font-semibold'>Advanced Level Physics.</div>
-                    <div className="cont cursor-pointer py-2 px-5 bg-blue-600 w-fit rounded-xl text-white mt-5 hover:scale-105 duration-300 inline-block">Register Now &#10148;</div>
-                    <div className='cont inline-block ml-2 cursor-pointer py-2 px-5 bg-gray-100 w-fit rounded-xl text-black border-1 hover:bg-purple-600 hover:text-white mt-5 hover:scale-105 duration-300'>Contact Us</div>
+                    <div className='adp text-gray-600 text-2xl font-semibold'>Advanced Level Physics.</div>
+                    <div className='btnset w-fit' >
+                       <Link to='/Register'> <div className="cont cursor-pointer py-2 px-5 bg-blue-600 w-fit rounded-xl text-white mt-5 hover:scale-105 duration-300 inline-block">Register Now &#10148;</div></Link>
+                        <div className='cont inline-block ml-2 cursor-pointer py-2 px-5 bg-gray-100 w-fit rounded-xl text-black border-1 hover:bg-purple-600 hover:text-white mt-5 hover:scale-105 duration-300'>Contact Us</div>
+                    </div>
 
-
-                    <div className="fowllo mt-20 text-xl font-semibold">Follow Us On...</div>
-                    <div><Social/></div>
+                    <div className="social-follow w-fit">
+                        <div className="fowllo mt-16 text-xl font-semibold">Follow Us On...</div>
+                        <div><Social /></div>
+                        <hr className='h-2 bg-black rounded-xl ' />
+                        <div className='text-lg font-semibold pt-5'>Call - +94 777 888 999</div>
+                    </div>
                 </div>
             </div>
-            <div className="Logo relative">
-                <div className='absolute text-9xl mt-32 -ml-48 text-gray-600 top-1/2 left-1/2 font-bold'>BSA</div>
-                <img src={home} alt="home" className='image mt-20'/>
-                <hr className='line mt-16 w-full' />
+            <div className="Logo relative ">
+                <div><img src={seal} alt="seal" className='seal absolute -left-20 seal' /></div>
+
+                <img src={home} alt="home" className='image z-0' />
+
 
 
             </div>

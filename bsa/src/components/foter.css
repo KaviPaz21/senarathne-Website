@@ -1,0 +1,70 @@
+.note{grid-area: no}
+.links{grid-area: lnk;}
+.loc{grid-area: loc;}
+.qnv{grid-area: qnv;}
+
+
+@media(min-width:1440px){
+    .footer{
+        display: grid;
+        place-content: center;
+        grid-template-areas: 
+            'no qnv lnk loc ';
+        width: 100%;
+        column-gap: 7em;
+    }
+}
+
+
+
+@media(max-width:1439px){
+    .footer{
+        display: grid;
+        place-content: center;
+        grid-template-areas: 
+            'no qnv lnk loc ';
+        width: 100%;
+        column-gap: 5em;
+    }
+}
+
+
+@media(max-width:1024px){
+    .footer{
+        display: grid;
+        place-content: center;
+        grid-template-areas: 
+            'no qnv lnk loc ';
+        width: 100%;
+        column-gap: 1.5em;
+    }
+}
+
+
+
+@media(max-width:930px){
+    .footer{
+        display: grid;
+        place-content: center;
+        grid-template-areas: 
+            'no qnv' 'lnk loc ';
+        width: 100%;
+        column-gap: 4em;
+        row-gap: 5em;
+    }
+}
+
+
+
+
+@media(max-width:425px){
+    .footer{
+        display: grid;
+        place-content: center;
+        grid-template-areas: 
+            'no' 'qnv' 'lnk' 'loc ';
+        width: 100%;
+        column-gap: 0em;
+        row-gap: 2em;
+    }
+}
