@@ -1,6 +1,7 @@
 import React from 'react'
 import './foter.css'
 import logo from '../images/seal.png'
+import { Link } from 'react-scroll'
 export default function Foter() {
     return (
         <div>
@@ -15,9 +16,9 @@ export default function Foter() {
                 <div className="links text-left">
                     <div className="fnm text-2xl py-2 font-semibold">Frequent Links</div>
                     <hr className='bg-black w-48 h-1 mb-5' />
-                    <div className='py-2 font-semibold text-gray-500 text-lg cursor-pointer hover:text-gray-700 duration-300'><a href="#">Site Home</a></div>
-                    <div className='py-2 font-semibold text-gray-500 text-lg cursor-pointer hover:text-gray-700 duration-300'><a href="#">LMS</a></div>
-                    <div className='py-2 font-semibold text-gray-500 text-lg cursor-pointer hover:text-gray-700 duration-300'><a href="#">Registrations</a></div>
+                    <div className='py-2 font-semibold text-gray-500 text-lg cursor-pointer hover:text-gray-700 duration-300'><a href="#home">Site Home</a></div>
+                    <div className='py-2 font-semibold text-gray-500 text-lg cursor-pointer hover:text-gray-700 duration-300'><a href="/LMS">LMS</a></div>
+                    <div className='py-2 font-semibold text-gray-500 text-lg cursor-pointer hover:text-gray-700 duration-300'><a href="/Register">Registrations</a></div>
 
                 </div>
 
@@ -26,9 +27,9 @@ export default function Foter() {
                     <div className="fnm text-2xl py-2 font-semibold">Locations</div>
                     <hr className='bg-black w-52 h-1 mb-5' />
                     <div className='text-black text-xl font-semibold'>Katubedda, Moratuwa, <br />Sri Lanka</div>
-                    <div className='py-2 font-semibold text-gray-500 text-lg cursor-pointer hover:text-gray-700 duration-300'><a href="#">Sigma - Wellawaya</a></div>
-                    <div className='py-2 font-semibold text-gray-500 text-lg cursor-pointer hover:text-gray-700 duration-300'><a href="#">Expertexion - Kesbewa</a></div>
-                    <div className='py-2 font-semibold text-gray-500 text-lg cursor-pointer hover:text-gray-700 duration-300'><a href="#">Minacrea - Hanwella</a></div>
+                    <div className='py-2 font-semibold text-gray-500 text-lg cursor-pointer hover:text-gray-700 duration-300'><a href="/LMS">Sigma - Wellawaya</a></div>
+                    <div className='py-2 font-semibold text-gray-500 text-lg cursor-pointer hover:text-gray-700 duration-300'><a href="/LMS">Expertexion - Kesbewa</a></div>
+                    <div className='py-2 font-semibold text-gray-500 text-lg cursor-pointer hover:text-gray-700 duration-300'><a href="/LMS">Minacrea - Hanwella</a></div>
 
                 </div>
 
@@ -37,10 +38,10 @@ export default function Foter() {
 
                     <div className="fnm text-2xl py-2 font-semibold">Quick Navigation</div>
                     <hr className='bg-black w-52 h-1 mb-5' />
-                    <div className='py-2 font-semibold text-gray-500 text-lg cursor-pointer hover:text-gray-700 duration-300'><a href="#">About US</a></div>
-                    <div className='py-2 font-semibold text-gray-500 text-lg cursor-pointer hover:text-gray-700 duration-300'><a href="#">Process</a></div>
-                    <div className='py-2 font-semibold text-gray-500 text-lg cursor-pointer hover:text-gray-700 duration-300'><a href="#">Thoughts</a></div>
-                    <div className='py-2 font-semibold text-gray-500 text-lg cursor-pointer hover:text-gray-700 duration-300'><a href="#">Contacts</a></div>
+                    <div className='py-2 font-semibold text-gray-500 text-lg cursor-pointer hover:text-gray-700 duration-300'><Link to="aboutme" smooth={true} duration={600} >About US</Link></div>
+                    <div className='py-2 font-semibold text-gray-500 text-lg cursor-pointer hover:text-gray-700 duration-300'><Link to="wkprocess" smooth={true} duration={600} >Process</Link></div>
+                    <div className='py-2 font-semibold text-gray-500 text-lg cursor-pointer hover:text-gray-700 duration-300'><Link to="thoughts" smooth={true} duration={600} >Thoughts</Link></div>
+                    <div className='py-2 font-semibold text-gray-500 text-lg cursor-pointer hover:text-gray-700 duration-300'><Link to="contacts" smooth={true} duration={600} >Contacts</Link></div>
 
                 </div>
 

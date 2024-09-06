@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@formspree/react": "^2.5.1",
     "@react-three/drei": "^9.111.5",
     "@react-three/fiber": "^8.17.6",
     "@testing-library/jest-dom": "^5.17.0",
